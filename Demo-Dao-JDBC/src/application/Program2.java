@@ -18,6 +18,12 @@ public class Program2 {
 			System.out.println(d);
 		}
 		
+		System.out.println();
+		
+		System.out.println("*** Test number two: Department findById ***");
+		Department dep = departmentDao.findById(2);
+		System.out.println(dep);
+		
 	}
 
 }
