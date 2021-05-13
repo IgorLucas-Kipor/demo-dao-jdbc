@@ -24,6 +24,26 @@ public class Program2 {
 		Department dep = departmentDao.findById(2);
 		System.out.println(dep);
 		
+		System.out.println();
+		
+		System.out.println("*** Test number three: Department update ***");
+		dep = departmentDao.findById(6);
+		dep.setName("Food");
+		departmentDao.update(dep);
+		System.out.println("Update complete!");
+		
+//		System.out.println();
+		
+//		System.out.println("*** Test number four: Department insert ***");
+//		Department department = new Department(null, "Books");
+//		departmentDao.insert(department);
+//		System.out.println("Insert complete! New id = "+department.getId());
+		
+		System.out.println();
+		
+		System.out.println("*** Test number five: Department delete ***");
+		departmentDao.DeleteById(7);
+		System.out.println("Deletion complete!");
 	}
 
 }
